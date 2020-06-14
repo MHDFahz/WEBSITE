@@ -1,7 +1,7 @@
 {% extends 'Bloglayout.html' %}
 {% block blog %}
     <div>
-    <h1 class="text-light">Blog</h1>
+    <h1 class="text-light mb-3">Posts by {{ user.username }} ({{ post.total }})</h1>
     {% for i in post.items %}<br>
             <article class="media content-section bg-light shadow rounded">
                 <img class="rounded-circle article-img" src="{{ url_for('static',filename='img/profile_pic/'+i.author.image_file) }}">
@@ -47,9 +47,9 @@
     {% for num in post.iter_pages(left_edge=2,right_edge=2,left_current=1,right_current=1) %}
         {% if num %}
             {% if post.page == num %}
-                <a class='btn btn-info mb-4' href ="{{ url_for('blog',page=num) }}">{{ num }}</a>
+                <a class='btn btn-info mb-4' href ="{{ url_for('user_posts',username=user.username,page=num) }}">{{ num }}</a>
             {% else %}
-                <a class='btn btn-outline-info mb-4' href ="{{ url_for('blog',page=num) }}">{{ num }}</a>
+                <a class='btn btn-outline-info mb-4' href ="{{ url_for('user_posts',username=user.username,page=num) }}">{{ num }}</a>
             {% endif %}
         {% else %}
             ...
