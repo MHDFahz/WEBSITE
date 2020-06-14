@@ -26,8 +26,22 @@
 .slider{
     position: fixed;
 }
+.border-3 {
+    border-width:3px !important;
+}
+.field_set{
+    border-color: #F00;
+    border-style: solid;
+}
 .about-picture{
     background: url(../img/bg.jpg)center/cover no-repeat fixed;
+    /* background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+}
+.skill-picture{
+    background: linear-gradient(0deg, rgba(32, 32, 32, 0.74), rgba(59, 59, 59, 0.705)), url(../img/skill.png)center/cover no-repeat fixed;
     /* background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
