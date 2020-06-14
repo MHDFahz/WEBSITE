@@ -1,0 +1,51 @@
+{% extends 'Bloglayout.html' %}
+{% block blog %}
+<div class="content-section bg-dark" >
+    <form method="POST" action="">
+        {{ form.hidden_tag() }}
+        <fieldset class="form-group">
+            <legend class="border-bottom mb-4 text-light">Login</legend>
+            <div class="form-group">
+                {{ form.email.label(class="form-control-label text-light") }}
+                {% if form.email.errors %}
+                    {{ form.email(class="form-control  form-control-lg is-invalid") }}
+                    <div class="invalid-feedback">
+                        {% for error in form.email.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    {{ form.email(class="form-control form-control-lg") }}
+                {% endif %}
+            </div>
+            <div class="form-group">
+                {{ form.password.label(class="form-control-label text-light") }}
+                {% if form.password.errors %}
+                    {{ form.password(class="form-control form-control-lg is-invalid") }}
+                    <div class="invalid-feedback">
+                        {% for error in form.password.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    {{ form.password(class="form-control form-control-lg") }}
+                {% endif %}
+            </div>
+            <div class="form-check">
+                {{ form.remember(class="form-check-input") }}
+                {{ form.remember.label(class="form-check-label text-light") }}
+            </div>
+        </fieldset>
+        <div class="form-group">
+            {{ form.submit(class="btn btn-outline-info") }}
+        </div>
+    </form>
+    <div class="border-top pt-3">
+        <small class="text-muted">
+            Not have account, Then - <a class="ml-2" href="{{ url_for('signup') }}">Sign Up</a>
+        </small>
+    </div>
+</div>
+        
+
+{% endblock blog %}

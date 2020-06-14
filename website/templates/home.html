@@ -1,0 +1,347 @@
+{% extends "layout.html" %}
+{% block content %}
+    <header id="header" class="bg-dark">
+        <div class="container">
+            <div class="row height align-items-center">
+                <div class='col-md-4'>
+                    <img src="{{ url_for('static',filename='img/profile.jpeg') }}" class="rounded img-thumbnail p-2 mt-3 shadow-lg animated rubberBand " width='350px' height='350px' alt="fahis" />
+                </div>
+                <div class="col-md-8">
+                    <h1 class="text-danger text-uppercase font-weight-bold font-italic animated flipInY">
+                        <strong>Muhammed Fahis</strong><br>
+                        <small class="text-light animation flipInY"><div class='console-container'><.<span id='text'></span><div class='console-underscore' id='console'>&#95;</div> .></div></small>
+                    </h1>
+                    <p class="text-muted lead py-2 w-75">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita molestiae aliquam ullam vitae omnis, velit et labore culpa? Unde similique beatae officiis labore fugit rerum et praesentium, cumque accusantium ipsa.</p>
+                <a href="{{ url_for('portfolio') }}" class="btn btn-outline-primary btn-lg m-2">Portfolio</a>    
+                <a href="{{ url_for('contact') }}"" class="btn btn-outline-success btn-lg m-2">Contact</a>    
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- About Section -->
+    <section id="about" class="bg-dark">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- about img col -->
+                <div class="col-md-6 about-picture height-80 body">
+                    <div class="clock">
+                        <div class="hand hour" data-hour-hand></div>
+                        <div class="hand minute" data-minute-hand></div>
+                        <div class="hand second" data-second-hand></div>
+                        <div class="number number1">1</div>
+                        <div class="number number2">2</div>
+                        <div class="number number3">3</div>
+                        <div class="number number4">4</div>
+                        <div class="number number5">5</div>
+                        <div class="number number6">6</div>
+                        <div class="number number7">7</div>
+                        <div class="number number8">8</div>
+                        <div class="number number9">9</div>
+                        <div class="number number10">10</div>
+                        <div class="number number11">11</div>
+                        <div class="number number12">12</div>
+                      </div>
+                </div>
+                <!-- about text col -->
+                <div class="col-md-6 about-text height-80 px-5 d-flex align-items-center justify-content-center"> 
+                    <div class="about-text-center">
+                        <!-- Title -->
+                        <div class="row shadow-lg">
+                            <div class="col text-center">
+                                <h1 class="display-4 text-uppercase text-light mb-0">
+                                    <strong style="font-family: 'Press Start 2P', cursive;" >Connect </strong>
+                                </h1>
+                                <div class="title-underline bg-warning"></div>
+                                <p class="mt-2 text-capitalize text-muted">Get touch with me</p>
+                            </div>
+                        </div>
+                <!-- End Titile -->
+                <!-- single items -->
+                        <div class="checkbox-item d-flex mt-5 m-2">
+                            <i class="fab fa-instagram fa-3x text-light  mr-3 align-self-center"></i>
+                            <a href="https://www.instagram.com/f_a_h_i_z.3/"><code class="text-light lead">f_a_h_i_z.3</code></a>
+                        </div>
+                <!-- End of single -->
+                <!-- single items -->
+                        <div class="checkbox-item d-flex m-2">
+                            <i class="fab fa-whatsapp fa-3x text-light mr-3 align-self-center"></i>
+                            <a href="https://wa.me/918086959369"><code class="text-light lead">91 80-86-959-369</code></a>
+                        </div>
+                <!-- End of single -->
+                <!-- single items -->
+                        <div class="checkbox-item d-flex m-2">
+                            <i class="fab fa-linkedin fa-3x text-light  mr-3 align-self-center"></i>
+                            <a href="https://www.linkedin.com/in/fahiz-mohd/"><code class="text-light lead">fahiz-mohd</code></a>
+                        </div>
+                <!-- End of single -->
+                <!-- single items -->
+                        <div class="checkbox-item d-flex m-2">
+                            <i class="fab fa-github fa-3x text-light  mr-3 align-self-center"></i>
+                            <a href="https://github.com/MHDFahz"><code class="text-light lead">MHDFahz</code></a>
+                        </div>
+                <!-- End of single -->
+                <!-- single items -->
+                        <div class="checkbox-item d-flex m-2">
+                            <i class="fab fa-google fa-3x text-light mr-3 align-self-center"></i>
+                            <code class="text-light lead">fahis.skazi@gmail.com</code>
+                        </div>
+                <!-- End of single -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End About Section -->
+    <!-- Project section -->
+
+    <section class="py-5 bg-dark" id="Project">
+        <!-- Title -->
+        <div class="row">
+            <div class="col text-center">
+                <h1 class="display-4 text-uppercase text-light mb-0 ">
+                    <strong style="font-family: 'Bungee Inline', cursive;">Proj€cts</strong>
+                </h1>
+                <div  class="title-underline w-25 bg-light"></div>
+                <p class="mt-2 text-capitalize text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error ab totam ex voluptatum harum quisquam nobis placeat, libero quos. Magnam eveniet impedit iste repudiandae atque adipisci aut, provident voluptate veniam!</p>
+            </div>
+        </div>
+        
+        <!-- End Titile -->
+        <div class="row">
+            <!-- Team Member -->
+            <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2 my-3 ">
+                <div class="card">
+                    <img src="{{ url_for('static',filename='img/nmtiles.png') }}" alt="member"  class="card-img-top">
+                    <h5 class="card-title text-center text-capitalize">N.M Tiles</h5>
+                    <div class="card-text mx-auto">
+                        <p>
+                        
+                        </p>
+                        <a href="" class="btn btn-outline-dark text-uppercase"><i class="fab fa-react fa1x text.info"></i> React Js</a>
+                    </div> 
+                    <div class="card-footer bg-dark d-flex justify-content-around">
+                        <a href="#">
+                            <i class="fab fa-github fa-2x text-light"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-google fa-2x text-light"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-react fa-2x text-primary"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- EndProject Member -->
+            <!-- Team Member -->
+            <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2 my-3">
+                <div class="card">
+                    <img src="{{ url_for('static',filename='img/jio.png') }}" alt="member"  class="card-img-top">
+                    <h5 class="card-title text-center text-capitalize">Jio Notification</h5>
+                    <div class="card-text mx-auto">
+                        <p>
+                        
+                        </p>
+                        <a href="" class="btn btn-outline-danger text-uppercase"><i class="fab fa-python fa1x text.warning"></i> React Js</a>
+                    </div> 
+                    <div class="card-footer bg-danger d-flex justify-content-around">
+                        <a href="#">
+                            <i class="fab fa-github fa-2x text-dark"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-youtube fa-2x text-dark"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-python fa-2x text-warning"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- EndTeam Member -->
+            <!-- Team Member -->
+            <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2 my-3">
+                <div class="card">
+                    <img src="{{ url_for('static',filename='img/voice1.jpg') }}" alt="member"  class="card-img-top">
+                    <h5 class="card-title text-center text-capitalize">Python Voice assistant</h5>
+                    <div class="card-text mx-auto">
+                        <p>
+                        
+                            
+                        </p>
+                        <a href="" class="btn btn-outline-warning text-uppercase"><i class="fab fa-python fa1x text.warning"></i> Python</a>
+                    </div> 
+                    <div class="card-footer bg-warning d-flex justify-content-around">
+                        <a href="#">
+                            <i class="fab fa-github fa-2x text-dark"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-google fa-2x text-dark"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-python fa-2x text-success"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- EndTeam Member -->
+            <!-- Team Member -->
+            <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2 my-3">
+                <div class="card">
+                    <img src="{{ url_for('static',filename='img/flask.png') }}" alt="member"  class="card-img-top">
+                    <h5 class="card-title text-capitalize">Blog Web app</h5>
+                    <div class="card-text mx-auto">
+                        <p>
+                        
+                        </p>
+                        <a href="" class="btn center btn-outline-secondary text-uppercase"><i class="fab fa-python fa1x text.info"></i> Python</a>
+                    </div> 
+                    <div class="card-footer bg-secondary d-flex justify-content-around">
+                        <a href="#">
+                            <i class="fab fa-github fa-2x text-light"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-google fa-2x text-light"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-python fa-2x text-warning"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- EndTeam Member -->
+            <!-- Team Member -->
+            <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2 my-3 mx-auto">
+                <div class="card">
+                    <img src="{{ url_for('static',filename='img/assistant.png') }}" alt="member"  class="card-img-top">
+                    <h5 class="card-title text-capitalize">team member</h5>
+                    <div class="card-text">
+                        <p>
+                        
+                        </p>
+                        <a href="" class="btn btn-outline-info text-uppercase">Press here</a>
+                    </div> 
+                    <div class="card-footer bg-info d-flex justify-content-around">
+                        <a href="#">
+                            <i class="fab fa-github fa-2x text-dark"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-google fa-2x text-dark"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-js fa-2x text-danger"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- EndTeam Member -->
+            <!-- Team Member -->
+            <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2 my-3 mx-auto">
+                <div class="card">
+                    <img src="./img/bg1.jpeg" alt="member"  class="card-img-top">
+                    <h5 class="card-title text-capitalize">team member</h5>
+                    <div class="card-text">
+                        <p>
+                        
+                        </p>
+                        <a href="" class="btn btn-outline-warning text-uppercase">Press here</a>
+                    </div> 
+                    <div class="card-footer bg-secondary d-flex justify-content-around">
+                        <a href="#">
+                            <i class="fab fa-facebook fa-2x text-dark"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-whatsapp fa-2x text-dark"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter fa-2x text-dark"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-google fa-2x text-dark"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- EndTeam Member -->
+        </div>
+    </section>
+<!-- End Team section -->
+    <!-- Skill Section -->
+    <section id="Skills" class="py-5 bg-light">
+        <div class="container bg-light rounded shadow-lg">
+            <div class="row">
+                <div class="col text-center ">
+                    <h1 class="display-4 text-uppercase test-dark mb-0">
+                        <strong style="font-family: 'Bungee Inline', cursive;">Skills</strong>
+                    </h1>
+                    <div class="title-underline bg-dark"></div>
+                    <!-- <p class="mt-2 text-capitalize text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error ab totam ex voluptatum harum quisquam nobis placeat, libero quos. Magnam eveniet impedit iste repudiandae atque adipisci aut, provident voluptate veniam!</p> -->
+                </div>
+            </div>
+            
+            <!-- End Titile -->
+            <div class="row justify-content-around">
+                <!-- single col -->
+
+                <div class="col-md-6 col-lg-3 text-center my-4 p-2">
+                    <i class="fab fa-python fa-5x text-warning"></i>
+                    <h3 class="text-uppercase my-3 animated zoomIn">Python</h3>
+                    <div class="progress m-3">
+                        <div class=" progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p class="text-muted">Python is a popular programming language.Python is an interpreted, high-level, general-purpose programming language. Created by Guido van Rossum and first released in 1991.Python is the most growing language of all time</p>
+                    <a href="#" class="btn btn-outline-warning btn-block text-uppercase">Press</a>
+                </div>
+
+                <!-- end of single col -->
+                <!-- single col -->
+
+                <div class="col-md-6 col-lg-3 text-center my-4 p-2">
+                    <i class="fab fa-html5 fa-5x text-danger"></i>
+                    <h3 class="text-uppercase my-3 animated zoomIn">Html</h3>
+                    <div class="progress m-3">
+                        <div class=" progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p class="text-muted">HTML stands for Hyper Text Markup Language
+                        HTML is the standard markup language for Web pages
+                        HTML elements are the building blocks of HTML pages
+                        HTML elements are represented by <> tags.</p>
+                    <a href="#" class="btn btn-outline-danger btn-block text-uppercase align-self-end">Press</a>
+                </div>
+
+                <!-- end of single col -->
+                <!-- single col -->
+
+                <div class="col-md-6 col-lg-3 text-center my-4 p-2">
+                    <i class="fab fa-css3 fa-5x text-primary"></i>
+                    <h3 class="text-uppercase my-3 animated zoomIn">Css</h3>
+                    <div class="progress m-3">
+                        <div class=" progress-bar progress-bar-striped " role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p class="text-muted">
+                        CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+                        CSS saves a lot of work. It can control the layout of multiple web pages all at once
+                        External stylesheets are stored in CSS files.</p>
+                    <a href="#" class="btn btn-outline-primary btn-block text-uppercase">Press</a>
+                </div>
+
+                <!-- end of single col -->
+                <!-- single col -->
+
+                <div class="col-md-6 col-lg-3 text-center my-4 p-2">
+                    <i class="fab fa-js fa-5x text-info"></i>
+                    <h3 class="text-uppercase my-3 animated zoomIn">jss</h3>
+                    <div class="progress m-3">
+                        <div class=" progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 80%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p class="text-muted">JavaScript is a programming language commonly used in web development. It was originally developed by Netscape as a means to add dynamic and interactive elements to websites. ... Like server-side scripting languages.</p>
+                    <a href="#" class="btn btn-outline-info btn-block text-uppercase">Press</a>
+                </div>
+
+                <!-- end of single col -->
+            </div>
+        </div>
+    </section>
+    <!-- End of Section -->
+    
+{% endblock content %}
