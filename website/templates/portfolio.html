@@ -1,4 +1,156 @@
 {% extends 'layout.html' %}
 {% block content %}
+<main role="main" class="container-fluid "  >
+    
+    <div class="row">
+        <div class="col d-flex align-self-center justify-content-center">
+            <img src="{{ url_for('static',filename='img/profile.jpeg') }}" class="rounded-circle shadow-lg border-dark img-thumbnail p-2 mt-3 " width='200px' alt="fahis" style="height: 200px; z-index: 3; background-color: #292b2c;" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col d-flex justify-content-center">
+            <div class="pb-0 mb-0" style="font-size: 35px; position: relative; top:-35px; font-family: 'Flavors', cursive; color: aliceblue;" ><br>Muhammed Fahis</div>
+        </div>
+    </div>
 
+
+    <div class="row">
+        <div class="col-md-8">
+        <!-- Skill Section -->
+    <section id="Skills" class="text-light shadow-lg">
+        <div class="container  rounded shadow-lg">
+            <div class="row">
+                <div class="col text-center ">
+                    <h1 class="display-4 text-uppercase test-dark mb-0">
+                        <strong style="font-family: 'Bungee Inline', cursive;">Skills</strong>
+                    </h1>
+                    <div class="title-underline bg-light"></div>
+                    <!-- <p class="mt-2 text-capitalize text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error ab totam ex voluptatum harum quisquam nobis placeat, libero quos. Magnam eveniet impedit iste repudiandae atque adipisci aut, provident voluptate veniam!</p> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm my-3">
+                    <fieldset class="border border-info border-3 rounded p-2 shadow-lg">
+                        <div class="text-light">
+                            <legend>Language:</legend>
+                                <i class="fab fa-python text-warning"></i> Python
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">100%</div>
+                                </div>
+                                <i class="fab fa-html5 text-primary"></i><i class="fab fa-css3 text-primary"></i> HTML/CSS
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped bg-primary progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">100%</div>
+                                </div>
+                                <i class="fa fa-database text-info"></i> SQL
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">50%</div>
+                                </div>
+                                <i class="fab fa-js-square text-danger"></i> Javascript
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
+                                </div>
+                                <i class="fab fa-php text-success"></i> PHP
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">70%</div>
+                                </div>
+                        </div>
+                    </fieldset>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm mb-4">
+                    <fieldset class="border border-info border-3 rounded p-2 shadow-lg">
+                        <div class="text-light">
+                            <legend>Software:</legend>
+                                <i class="fab fab fa-apple text-secondary"></i> Mac OS X
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped bg-secondary progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">100%</div>
+                                </div>
+                                <i class="fab fab fa-windows text-primary"></i> Windows
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped bg-primary progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">100%</div>
+                                </div>
+                                <i class="fa fa-rocket text-danger"></i> VS Code
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">100%</div>
+                                </div>
+                                <i class="fab fa-microsoft text-info"></i> Microsoft Office
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" style="width: 98%">98%</div>
+                                </div>
+                                <i class="fab fa-adobe text-success"></i> Adobe Photoshop
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" aria-valuenow="96" aria-valuemin="0" aria-valuemax="100" style="width: 96%">96%</div>
+                                </div>
+                        </div>
+                    </fieldset>
+
+                </div>
+                <div class="col-sm mb-4">
+                    <fieldset class="border border-info border-3 rounded p-2 shadow-lg">
+                        <div class="text-light">
+                            <legend>Tools, Frameworks, and Libraries:</legend>
+                                <i class="fa fa-flask text-info"></i> Flask
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
+                                </div>
+                                <i class="fab fa-git text-secondary"></i>  <i class="fab fa-github text-secondary"></i> Git and GitHub
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped bg-secondary progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">100%</div>
+                                </div>
+                                <i class="fab fa-react text-primary"></i> React JS
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped bg-primary progress-bar-animated" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">60%</div>
+                                </div>
+                                <i class="fab fa-node-js text-warning"></i> Node
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">50%</div>
+                                </div>
+                                <i class="fab fa-php text-success"></i> Django
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">100</div>
+                                </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>  
+        </div>
+    </section>
+    <!-- End of Section -->
+        </div>
+        <div class="col-md-4 pb-5 ">
+            <div class="bg-dark shadow-lg p-3 text-light">
+                <h3>Education</h3>
+                <div class="card mb-3 shadow-lg">
+                    <div class="card-header bg-primary">
+                        <i class="fas fa-user-graduate text-dark"></i> <b>Kerala Technical University</b>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-dark">MES College Of Engineering</h5>
+                        <p class="card-text text-dark">B Tech Computer Science Engineering</p>
+                    </div>
+                </div>
+                <div class="card mb-3 shadow-lg">
+                    <div class="card-header bg-info">
+                        <i class="fas fa-school text-dark"></i> <b>Kerala State Board</b>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-dark">St Joseph English School</h5>
+                        <p class="card-text text-dark">Higher Secondary</p>
+                    </div>
+                </div>
+                <div class="card mb-3 shadow-lg">
+                    <div class="card-header bg-success">
+                        <i class="fas fa-book-reader text-dark"></i> <b> C B S E</b>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-dark">WMO English School</h5>
+                        <p class="card-text text-dark">CBSE</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
 {% endblock content %}

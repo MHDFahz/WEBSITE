@@ -29,10 +29,7 @@
 .border-3 {
     border-width:3px !important;
 }
-.field_set{
-    border-color: #F00;
-    border-style: solid;
-}
+
 .about-picture{
     background: url(../img/bg.jpg)center/cover no-repeat fixed;
     /* background-size: cover;
